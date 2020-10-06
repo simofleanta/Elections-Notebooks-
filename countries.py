@@ -24,9 +24,3 @@ DE_implot = sns.lmplot(data=DE, x='year', y='population',
 print(DE_implot)
 DE_hist = sns.distplot(DE["population"])
 print(DE_hist)
-
-
-
-
-
-
