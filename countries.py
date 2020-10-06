@@ -3,8 +3,6 @@ import seaborn as sns
 from pandas import DataFrame
 import matplotlib.pyplot as plt
  
-
-
 #open the file
 c=pd.read_csv('countries.csv')
 print(c)
