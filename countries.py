@@ -21,6 +21,7 @@ print(DE)
 
 DE_implot = sns.lmplot(data=DE, x='year', y='population',
                  fit_reg=False)
-print(DE_implot)
+plt.show()
 DE_hist = sns.distplot(DE["population"])
-print(DE_hist)
+plt.show()
+
