@@ -8,17 +8,76 @@ vote=pd.read_csv('population.csv')
 print(vote.columns)
 df=DataFrame(vote)
 
-sns.violinplot(x=df["County"], y=df["M_18_24"], palette="Blues")
-plt.show()
-
-sns.distplot(df["M_18_24"])
-plt.show()
-
-sns.boxplot(data=df, x="County", y="F_45_64")
-plt.show()
 #-----------------------------------------------------------
+
+#charts for BV 
 BV=df[df.County=='BV']
 print(BV)
+
+sns.distplot(BV["Voters"])
+plt.show()
+
+vissual1= sns.lmplot(data=BV, x='Voters', y='F_25_34',
+                 fit_reg=False)
+plt.show()
+
+vissual2 = sns.lmplot(data=BV, x='Voters', y='M_25_34',
+                 fit_reg=False)
+plt.show()
+
+#------------------------------------------------------------------
+
+#charts for Sibiu 
+
+SB=df[df.County=='SB']
+print(SB)
+
+sns.distplot(SB["Voters"])
+plt.show()
+
+vissual1= sns.lmplot(data=SB, x='Voters', y='F_25_34',
+                 fit_reg=False)
+plt.show()
+
+vissual2 = sns.lmplot(data=SB, x='Voters', y='M_25_34',
+                 fit_reg=False)
+plt.show()
+
+#--------------------------------------------------------------
+
+#charts for Cluj 
+
+CJ=df[df.County=='CJ']
+print(SB)
+
+sns.distplot(CJ["Voters"])
+plt.show()
+
+vissual1= sns.lmplot(data=CJ, x='Voters', y='F_25_34',
+                 fit_reg=False)
+plt.show()
+
+vissual2 = sns.lmplot(data=CJ, x='Voters', y='M_25_34',
+                 fit_reg=False)
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
