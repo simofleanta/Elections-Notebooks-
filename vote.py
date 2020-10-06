@@ -38,9 +38,15 @@ plt.show()
 
 
 
+
 vissual3 = sns.pairplot(BV, vars=['F_25_34','M_25_34'])
 plt.show()
 
+vissual7 = sns.pairplot(BV, vars=['F_35_44','F_67'])
+plt.show()
+
+vissual8 = sns.pairplot(BV, vars=['M_35_44','M_67'])
+plt.show()
 #------------------------------------------------------------------
 
 #charts for Sibiu 
@@ -68,7 +74,7 @@ plt.show()
 #charts for Cluj 
 
 CJ=df[df.County=='CJ']
-print(SB)
+print(CJ)
 
 sns.distplot(CJ["Voters"])
 plt.show()
@@ -105,6 +111,10 @@ plt.show()
 
 vissual3 = sns.pairplot(CT, vars=['F_25_34','M_25_34'])
 plt.show()
+
+
+#treemap
+#maps
 
 
 
