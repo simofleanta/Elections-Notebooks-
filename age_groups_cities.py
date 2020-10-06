@@ -13,6 +13,12 @@ df=DataFrame(age)
 
 sns.violinplot(x=df["City"], y=df["30_34"], palette="Blues")
 plt.show()
+sns.violinplot(x=df["City"], y=df["20_14"], palette="Blues")
+plt.show()
+sns.violinplot(x=df["City"], y=df["15_19"], palette="Blues")
+plt.show()
+
+
 
 
 
