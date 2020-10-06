@@ -26,14 +26,13 @@ print(Bucharest)
 #and perform charts on the specific city
 Bucharest_vis= sns.lmplot(data=Bucharest, x='15_19', y='20_14',
                  fit_reg=False)
-print(Bucharest_vis)
+plt.show()
 
 B_vis = sns.pairplot(Bucharest, vars=['Year','20_14'])
-print(B_vis)
+plt.show()
 
 Bucx= sns.boxplot(data=Bucharest, x="Year", y="30_34")
-print(Bucx)
-
+plt.show()
 
 
 

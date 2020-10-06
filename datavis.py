@@ -8,6 +8,7 @@ print(v)
 df=DataFrame(v)
 
 pairplot=sns.pairplot(df, vars=['Year','Pibmilioane'])
+plt.show()
 
 
 

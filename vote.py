@@ -28,6 +28,16 @@ vissual2 = sns.lmplot(data=BV, x='Voters', y='M_25_34',
                  fit_reg=False)
 plt.show()
 
+vissual4= sns.lmplot(data=BV, x='Voters', y='F_35_44',
+                 fit_reg=False)
+plt.show()
+
+vissual5= sns.lmplot(data=BV, x='Voters', y='M_35_44',
+                 fit_reg=False)
+plt.show()
+
+
+
 vissual3 = sns.pairplot(BV, vars=['F_25_34','M_25_34'])
 plt.show()
 
