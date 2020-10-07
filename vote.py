@@ -135,13 +135,15 @@ print(TM)
 TM=df[df.County=='TM']
 print(TM) 
 
+#scatterdot
 vissual2 = sns.lmplot(data=TM, x='Voters', y='M_25_34',
                  fit_reg=False)
 plt.show()
-
+#pairplot
 pairplot = sns.pairplot(TM, vars=['F_25_34','M_25_34'])
 plt.show()
 
+#heatmap
 plt.figure(figsize=(10,5))
 sns.heatmap(TM.corr(),cmap='Blues')
 plt.show()
