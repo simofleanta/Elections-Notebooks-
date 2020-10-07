@@ -113,9 +113,6 @@ vissual3 = sns.pairplot(CT, vars=['F_25_34','M_25_34'])
 plt.show()
 
 
-#treemap
-#maps
-
 
 
 
