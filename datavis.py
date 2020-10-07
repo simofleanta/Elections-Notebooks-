@@ -7,8 +7,11 @@ v=pd.read_csv('Kasbv.csv')
 print(v)
 df=DataFrame(v)
 
-pairplot=sns.pairplot(df, vars=['Year','Pibmilioane'])
+
+
+pairplot=sns.pairplot(df, vars=['Nrfirme','Pibmilioane'])
 plt.show()
+
 
 
 

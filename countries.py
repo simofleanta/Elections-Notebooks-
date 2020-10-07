@@ -26,3 +26,4 @@ plt.show()
 DE_hist = sns.distplot(DE["population"])
 plt.show()
 
+
