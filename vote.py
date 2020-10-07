@@ -37,8 +37,6 @@ vissual5= sns.lmplot(data=BV, x='Voters', y='M_35_44',
 plt.show()
 
 
-
-
 vissual3 = sns.pairplot(BV, vars=['F_25_34','M_25_34'])
 plt.show()
 
@@ -46,6 +44,10 @@ vissual7 = sns.pairplot(BV, vars=['F_35_44','F_67'])
 plt.show()
 
 vissual8 = sns.pairplot(BV, vars=['M_35_44','M_67'])
+plt.show()
+
+plt.figure(figsize=(10,6))
+sns.heatmap(BV.corr(),cmap='Blues')
 plt.show()
 #------------------------------------------------------------------
 
@@ -66,6 +68,10 @@ vissual2 = sns.lmplot(data=SB, x='Voters', y='M_25_34',
 plt.show()
 
 vissual3 = sns.pairplot(SB, vars=['F_25_34','M_25_34'])
+plt.show()
+
+plt.figure(figsize=(10,6))
+sns.heatmap(SB.corr(),cmap='Blues')
 plt.show()
 
 
@@ -90,13 +96,17 @@ plt.show()
 vissual3 = sns.pairplot(CJ, vars=['F_25_34','M_25_34'])
 plt.show()
 
+plt.figure(figsize=(10,6))
+sns.heatmap(CJ.corr(),cmap='Blues')
+plt.show()
 
 #---------------------------------
 
 #charts for Constanta 
 
 CT=df[df.County=='CT']
-print(SB)
+print(CT) 
+
 
 sns.distplot(CT["Voters"])
 plt.show()
@@ -111,6 +121,33 @@ plt.show()
 
 vissual3 = sns.pairplot(CT, vars=['F_25_34','M_25_34'])
 plt.show()
+
+plt.figure(figsize=(10,6))
+sns.heatmap(CT.corr(),cmap='Blues')
+plt.show()
+
+#---------------------------------------------------------------
+#TIMISOARA :)
+
+TM=df[df.County=='TM']
+print(TM) 
+
+TM=df[df.County=='TM']
+print(TM) 
+
+vissual2 = sns.lmplot(data=TM, x='Voters', y='M_25_34',
+                 fit_reg=False)
+plt.show()
+
+pairplot = sns.pairplot(TM, vars=['F_25_34','M_25_34'])
+plt.show()
+
+plt.figure(figsize=(10,5))
+sns.heatmap(TM.corr(),cmap='Blues')
+plt.show()
+
+
+
 
 
 
