@@ -11,7 +11,7 @@ df=DataFrame(vote)
 
 
 #-----------------------------------------------------------
- 
+ #CHARTS
 
 #charts for BV 
 BV=df[df.County=='BV']
@@ -50,6 +50,7 @@ plt.figure(figsize=(10,6))
 sns.heatmap(BV.corr(),cmap='Blues')
 plt.show()
 #------------------------------------------------------------------
+"""Sibiu"""
 
 #charts for Sibiu 
 
@@ -76,6 +77,7 @@ plt.show()
 
 
 #--------------------------------------------------------------
+"""Cluj"""
 
 #charts for Cluj 
 
@@ -101,6 +103,7 @@ sns.heatmap(CJ.corr(),cmap='Blues')
 plt.show()
 
 #---------------------------------
+"""cONSTANTA"""
 
 #charts for Constanta 
 
@@ -127,6 +130,9 @@ sns.heatmap(CT.corr(),cmap='Blues')
 plt.show()
 
 #---------------------------------------------------------------
+
+"""Timisoara"""
+
 #TIMISOARA :)
 
 TM=df[df.County=='TM']
@@ -149,6 +155,8 @@ sns.heatmap(TM.corr(),cmap='Blues')
 plt.show()
 
 #----------------------------------------------------------------------------------
+
+"""BASIC Stats"""
 
 vote=pd.read_csv('population.csv')
 print(vote.columns)
