@@ -148,6 +148,61 @@ plt.figure(figsize=(10,5))
 sns.heatmap(TM.corr(),cmap='Blues')
 plt.show()
 
+#----------------------------------------------------------------------------------
+
+vote=pd.read_csv('population.csv')
+print(vote.columns)
+df=DataFrame(vote)
+
+
+"""Find the average per county """
+#groupby county
+voters=df.groupby('County')
+print(voters.get_group('TM'))
+
+#total per county
+total_per_county=df['County'].value_counts()
+print(total_per_county)
+
+#highest number of voters are in the below counties
+voters=df.groupby('County')
+votersdf = voters['County','Voters'].max()
+print(votersdf)
+
+#mean per county
+voters=df.groupby('County')
+votersdf = voters['County','Voters'].mean()
+print(votersdf)
+
+#the lowest presence in the counties below
+voters=df.groupby('County')
+votersdf = voters['County','Voters'].min()
+print(votersdf)
+
+
+#the lowest presence in the counties below
+voters=df.groupby('County')
+votersdf = voters['County','Voters'].median()
+print(votersdf)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
