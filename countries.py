@@ -14,6 +14,15 @@ viz2 = sns.distplot(df["population"])
 plt.show()
 
 
+
+plt.figure(figsize=(10,5))
+sns.heatmap(df.corr(),cmap='Blues')
+plt.show()
+
+
+
+
+
 #take one country 
 
 DE=df[df.country=='Germany']
