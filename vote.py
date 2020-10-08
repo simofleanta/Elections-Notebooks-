@@ -190,8 +190,14 @@ print(votersdf)
 
 #the lowest presence in the counties below
 voters=df.groupby('County')
-votersdf = voters['County','Voters'].median()
+votersdf = voters['County','Voters','F_25_34','M_25_34'].median()
 print(votersdf)
+
+#heatmap on median
+
+plt.figure(figsize=(10,5))
+sns.heatmap(votersdf.corr(),cmap='Blues')
+plt.show()
 
 
 
