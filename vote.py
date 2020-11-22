@@ -3,6 +3,8 @@ import seaborn as sns
 from pandas import DataFrame
 import matplotlib.pyplot as plt
 import stats
+
+#https://plotly.com/python/builtin-colorscales/
  
 #open the file
 vote=pd.read_csv('population.csv')
