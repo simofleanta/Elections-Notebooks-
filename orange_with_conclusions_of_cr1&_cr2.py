@@ -27,7 +27,7 @@ df=DataFrame(orange)
 
 df.head(1)
 
-#change column names so that there'll be no parsing issues as the process goes along
+"""change column names so that there'll be no parsing issues as the process goes along"""
 
 df=DataFrame(orange)
 
@@ -56,6 +56,8 @@ df.dropna() #generate DataFrame using new columns and using dropna function to r
 
 #Rata de conversie pe opened: CR1 = D / B.
 #Rata de conversie pe not opened:  CR2 = E / C.
+
+"""Perorm calcs"""
 
 from pandas import DataFrame
 
