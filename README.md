@@ -1,8 +1,7 @@
-# dataVis
-the nicest proojects:
+# Elections overview
 
-the sales sample data with the tree-map
-the votes with the age distribution of presence to vote 
+These are notebooks over trends in elections both in Romania and Germany:
+ 
 
 ![Cj_map](https://user-images.githubusercontent.com/47668423/95323770-f8fb3600-089e-11eb-86ab-7c0fff336492.png)
 
